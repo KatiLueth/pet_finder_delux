@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 70px 0 0 0;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+.navbar-right {
+    float: right;
+    margin-right: -15px;
+}
+.nav {
+    list-style: none;
+    font-weight: 700;
+}
+.jumbotron {
+    background-image: url("../img/jumbotron.jpg")
+}

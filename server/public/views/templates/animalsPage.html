@@ -1,0 +1,43 @@
+<container class="initialSelect">
+    <div class="jumbotron">
+
+        <div class="dropdown">
+            <select autofocus name="animaltypes" ng-change="storeAnimal()" ng-model="animal">
+
+                <option value="" selected="selected">Choose an animal</option>
+                <option value="barnyard">Barn Yard</option>
+                <option value="bird">Bird</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="horse">Horse</option>
+                <option value="pig">Pig</option>
+                <option value="reptile">Reptile</option>
+                <option value="smallfurry">Small & Furry</option>
+            </select>
+        </div>
+
+    </div>
+</container>
+
+
+
+
+
+    <h2>{{animal.name.$t}}</h2>
+
+    <div class="images">
+        <img ng-src={{animal.media.photos.photo[2].$t}} />
+    </div>
+
+    <div class="container">
+        <p>{{animal.age.$t}}</p>
+        <p>{{animal.breeds.$t}}</p>
+        <p>{{animal.description.$t}}</p>
+        <!--Contact information-->
+        <p>{{animal.contact.phone.$t}}</p>
+        <p>{{animal.contact.email.$t}}</p>
+        <p>{{animal.contact.state.$t}}</p>
+    </div>
+
+
+

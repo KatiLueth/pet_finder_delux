@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>API pet finder Delux</title>
+    <!-- Angular -->
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <!--Controllers-->
+    <script type="text/javascript" src="/scripts/controllers/animalController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/favoritesController.js"></script>
+
+    <!--Styles-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,700,500,400' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+
+
+</head>
+
+<body>
+
+<div ng-include="'views/templates/topNav.html'"></div>
+
+<div ng-view></div>
+
+</body>
+</html>
