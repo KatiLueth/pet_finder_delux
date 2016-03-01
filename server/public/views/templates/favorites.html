@@ -1,7 +1,30 @@
+<!--Image Gallery-->
+<!--Object = pets: images = [image,image]-->
+
+<div class="gallery" ng-show="pets.images.length">
+    <img class="img img-circle img-thumbnail center-block" ng-src="{{pets.images[0]}}" />
+    <ul class="clearfix">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in pets.images"><img ng-src="{{image}}" /></li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
 <h2>Favorites</h2>
 
 <h2>{{animal.name.$t}}</h2>
 <p>{{animal.description.$t}}</p>
 <div class="images">
     <img ng-src={{animal.media.photos.photo[2].$t}} />
+</div>
 </div>

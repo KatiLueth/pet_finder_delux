@@ -1,17 +1,57 @@
 body {
     margin: 0;
     padding: 70px 0 0 0;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;;
-}
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f9fafb url("../img/dog.jpeg") no-repeat right top;
+    background-size: 100%
+    /*background-size: 100%;*/
 
-.navbar-right {
-    float: right;
-    margin-right: -15px;
+
 }
 .nav {
     list-style: none;
     font-weight: 700;
 }
-.jumbotron {
-    background-image: url("../img/jumbotron.jpg")
+.navbar-right {
+    float: right;
+    margin-right: -15px;
 }
+.navbar-brand {
+    padding-left: 2em;
+}
+
+.jumbotron {
+    background-size: 50%;
+    opacity: 0.6;
+    position: relative;
+    margin-top: 5em;
+
+}
+.jumbotron h1 {
+    text-align: center;
+    font-size: 5em;
+    padding: 5% 0;
+}
+
+#animals {
+    background:rgb(166,166,166); /* IE6/7/8 */
+    filter:alpha(opacity=70); /* IE6/7/8 */
+    background:rgba(166,166,166,0.85);
+    margin: 5%;
+    padding: 5%;
+    opacity: 1;
+    position: relative;
+}
+img {
+    float: left;
+    display: inline;
+    margin: .5em;
+}
+.container {
+    display: inline;
+}
+
+/*#animals #initialSelect {*/
+    /*font-size: 8px;*/
+    /*position:relative; !* IE6/7/8 *!*/
+/*}*/
