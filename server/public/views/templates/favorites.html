@@ -1,18 +1,27 @@
 <!--Image Gallery-->
 <!--Object = pets: images = [image,image]-->
 
-<div class="gallery" ng-show="pets.images.length">
-    <img class="img img-circle img-thumbnail center-block" ng-src="{{pets.images[0]}}" />
-    <ul class="clearfix">
-        <li class="small-image pull-left thumbnail" ng-repeat="image in pets.images"><img ng-src="{{image}}" /></li>
-    </ul>
+<!--<div class="gallery" ng-show="pets.images.length">-->
+    <!--<img class="img img-circle img-thumbnail center-block" ng-src="{{pets.images[0]}}" />-->
+    <!--<ul class="clearfix">-->
+        <!--<li class="small-image pull-left thumbnail" ng-repeat="image in pets.images"><img ng-src="{{image}}" /></li>-->
+    <!--</ul>-->
 
+<!--</div>-->
+<div class="jumbotron" id="FavoriteAnimals">
+    <div class="row">
+
+    </div>
 </div>
 
 
 
 
+<div ng-repeat="fav in favorites" class="row">
 
+</div>
+<!-- ng-if: if the statement is truthy, show image.-->
+<div ng-if="fav.img == '' " ng-src=""
 
 
 

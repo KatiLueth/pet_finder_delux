@@ -36,14 +36,12 @@ myApp.controller('AnimalController', ['$scope', '$http', 'PetFactory', function(
     }
 
     $scope.addFavorite = function(){
-        //var favoriteAnimal = $scope.animal;
         var favoriteAnimal = {
             name: $scope.animal.name.$t,
             pet_id: $scope.animal.id.$t,
             description: ($scope.animal.description.$t).substring(0, 100),
-            imgUrl: $scope.animal.media.photos.photo[2].$t
+            img: $scope.animal.media.photos.photo[2].$t
         };
-        console.log(favoriteAnimal);
         // send favorite data to factory
         $scope.petFactory.petData(favoriteAnimal);
     };

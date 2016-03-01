@@ -1,6 +1,6 @@
 <div class="jumbotron" id="animals">
-<div id="initialSelect">
-
+<div class="row">
+    <div id="initialSelect">
         <div class="dropdown">
 
             <select autofocus name="animaltypes" ng-change="storeAnimal()" ng-model="animal">
@@ -16,14 +16,21 @@
                 <option value="smallfurry">Small & Furry</option>
             </select>
         </div>
+    </div>
+</div>
 
-    <h2>{{animal.name.$t}}</h2>
+<div class="row">
+    <div class="col-med-6">
 
-    <div class="images">
-        <img ng-src={{animal.media.photos.photo[2].$t}} />
+          <div class="images">
+              <img ng-src={{animal.media.photos.photo[2].$t}} />
+          </div>
     </div>
 
+<div class="col-med-6">
+
     <div class="container">
+        <h2>{{animal.name.$t}}</h2>
         <p>{{animal.age.$t}}</p>
         <p>{{animal.breeds.$t}}</p>
         <p>{{animal.description.$t}}</p>
@@ -33,11 +40,12 @@
         <p>{{animal.contact.state.$t}}</p>
 
         <button id="post-animal-favorite" ng-click="addFavorite()">ADD TO FAVORITES</button>
-
-
-
-
     </div>
+</div>
+
+
+</div>
+</div>
 </div>
 </div>
 

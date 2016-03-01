@@ -34,16 +34,17 @@ app.get("/*", function(req,res,next){
 
 // 'POST' new favorite
 app.post('/new', function(req, res) {
-    console.log('from server.app: ', req.body);
+    //console.log('from server.app: ', req.body);
     var addNew = {
         name: req.body.name,
         pet_id: req.body.pet_id,
         description: req.body.description,
         img: req.body.img
     };
+
     pg.connect(connectionString, function(err, client, done) {
         client.query('INSERT INTO favorites (name, pet_id, description, img) VALUES ($1, $2, $3, $4) RETURNING id',
-            [addNew.name, addNew.pet_id, addNew.description, addNew.imgUrl],
+            [addNew.name, addNew.pet_id, addNew.description, addNew.img],
             function (err, result) {
                 done();
                 if(err) {

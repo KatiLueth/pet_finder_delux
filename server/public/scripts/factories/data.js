@@ -5,9 +5,9 @@ myApp.factory('PetFactory', ['$http', function($http){
 
     // PRIVATE
 
-    //var getData = function(){
-    //    return data;
-    //};
+    var getData = function(){
+        return data;
+    };
 
 
 
@@ -17,10 +17,6 @@ myApp.factory('PetFactory', ['$http', function($http){
    // Add data to "Favorites" database.
     var addNewFave = function(favoriteAnimal){
         // ajax 'POST' new favorite to DB
-        // shorthand ajax
-        //$http.post('/new', favoriteAnimal, config).then(successCallback, errorCallback);
-
-
         // regular ajax
         $http({
             method: 'POST',
@@ -28,6 +24,7 @@ myApp.factory('PetFactory', ['$http', function($http){
             data: favoriteAnimal
         }).then(function(response){
             console.log(response.data);
+            console.log('From Factory data.js: ', response);
         });
     };
 
